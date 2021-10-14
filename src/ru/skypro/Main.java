@@ -48,24 +48,30 @@ public class Main {
             System.out.println(year + " Год не является високосным");
 
         // Задание №4
+
         System.out.println();
         System.out.println("Задание №4");
+        int deliveryDistance = 95;
+        int timeDelivery = ((deliveryDistance + 19) / 40) + 1;
+        System.out.println("Потребуется дней: " + timeDelivery);
+        /*
         var deliveryDistance = 95;
-        var days = 1;
+        var time = 1;
         if (deliveryDistance <=20)
         {
-            System.out.println("Потребуется дней "+ days);
+            System.out.println("Потребуется дней "+ time);
         }
         else if (deliveryDistance>20 && deliveryDistance<=60)
         {
-            days += 1;
-            System.out.println("Потребуется дней "+ days);
+            time += 1;
+            System.out.println("Потребуется дней "+ time);
         }
         else if (deliveryDistance>60 && deliveryDistance<=100)
         {
-            days += 2;
-            System.out.println("Потребуется дней "+ days);
+            time += 2;
+            System.out.println("Потребуется дней "+ time);
         }
+        */
         System.out.println();
         System.out.println("Задание №5");
         var monthNumber = 12;
@@ -99,6 +105,7 @@ public class Main {
         // Задание №6
         System.out.println();
         System.out.println("Задание №6");
+        // Переделать ............if..............
         var age = 19;
         int salary = 58_000;
         if ( age>= 23 ){
