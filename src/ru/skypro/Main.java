@@ -41,8 +41,15 @@ public class Main {
         // Задание №3
         System.out.println();
         System.out.println("Задание №3");
-        var year = 2021;
-        if (year % 4 == 0 )
+        var year = 1902;
+        if (year % 400 == 0)
+        {
+            System.out.println(year + " Год является високосным");
+        } else if (year % 100 == 0)
+        {
+            System.out.println(year + " Год не является високосным");
+        }
+        else if (year % 4 == 0 )
             System.out.println(year + " Год является високосным");
         else
             System.out.println(year + " Год не является високосным");
@@ -136,6 +143,34 @@ public class Main {
         // Задача №7
         System.out.println();
         System.out.println("Задача №7");
+        var age7 = 25;
+        var salary7 = 60_000;
+        double wantedSum7 = 330_000;
+        double iniSum7 = wantedSum7;
+        double bid7 = 10;
+        var time7 = 12;
+        var maxBid7 = salary7 / 2;
+        if (age7 < 23)
+        {
+            bid7+= 1;
+            // System.out.println(2);
+        } else if (age7> 23 && age7 <30)
+        {
+            bid7+=0.5;
+           // System.out.println(1);
+        }
+        if (salary7 > 80_000)
+            bid7 -= 0.7;
+
+
+        wantedSum7= wantedSum7 * (100+bid7) / 100;
+        // System.out.println(bid7);
+        // System.out.println(wantedSum7);
+
+        if (wantedSum7 / 12 < maxBid7)
+            System.out.println( "Максимальный платеж при ЗП " + salary7 + " равен " + maxBid7 + " рублей. Платеж по кредиту " + iniSum7 + " рублей. Одобрено");
+        else
+            System.out.println( "Максимальный платеж при ЗП " + salary7 + " равен " + maxBid7 + " рублей. Платеж по кредиту " + iniSum7 + " рублей. Отказано");
 
     }
 }
